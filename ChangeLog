@@ -1,0 +1,72 @@
+CHANGES OF PUBLIC RELEASE OF EPACTS
+============================================================
+EPACTS v3.2.5 release
+March 11, 2014
+EMMAX-SKAT is implemented with major bug fix
+============
+EPACTS v3.2.4 release
+November 21th, 2013
+Fixed a number of minor bugs (more comprehensive fix is still pending)
+============
+EPACTS v3.2.3 release
+March 25th, 2013
+Relaxed the checking of low-rank matrix in SKAT tests (to avoid unncessary skipping of genes)
+============
+EPACTS v3.2.2 release
+March 13th, 2013
+Fixed an error which occasionally report mismatches in the number of samples
+============
+EPACTS v3.2.1 release
+March 9th, 2013
+Fixed errors in loading the dynamic library
+Fixed errors in SKAT-O (thanks to Anubha Mahajan and Jason Flannick)
+Fixed bugs in emmax-CMC
+Added emmax-SKAT (contributed by Seunngeun Lee)
+And additional minor bug fixes
+============
+EPACTS v3.1.0 release
+December 4th, 2012
+Removed dependency on libR.so
+Additional minor bug fixes
+============
+EPACTS v3.0.0 release
+November 25th, 2012
+Restructured with source code release (with autoconf / automake / libtools)
+Added zoom plot feature
+FRAC_BURDEN keyword was replace to FRAC_WITH_RARE for groupwise testing
+============
+EPACTS v2.2.0 beta
+October 26th, 2012
+Added --max-mac option
+Fixed Firth's bias-corrected test (by Clement Ma)
+Added more informative warning messages when index files do not exist
+Fixed the bug in the epacts-plot in plotting ties
+Fixed errors in the MAF estimates per case and control
+============
+EPACTS v2.12 beta
+October 1st, 2012
+Fixed bug in --minRSQ option
+============
+EPACTS v2.11 beta
+September 28th, 2012
+Numbers and frequencies of cases/ctrls are added in binary tests
+--max-maf parameter is added to single variant test
+Fixed EMMAX error in MAF output
+More informative error messages
+============
+EPACTS v2.1 beta
+September 27th, 2012
+EMMAX interface is changed. --kinOnly option is related with a new command make-kin
+SKAT-O is upgraded to version 0.77 with additional configurable parameter settings
+Some parameter names are renamed (e.g. --min-maf, --min-mac)
+Many minor bug fixes
+============
+EPACTS v2.01 beta
+July 6th, 2012
+SKAT-O is upgraded to version 0.76
+Fixed minor bugs in option names (Thanks to Xueling Sim)
+============
+EPACTS v2.0 beta
+July 3rd, 2012
+First public release (binary only) of EPACTS
+============

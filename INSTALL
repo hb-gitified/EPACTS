@@ -1,0 +1,30 @@
+(See http://genome.sph.umich.edu/wiki/EPACTS for comprehensive documentation)
+
+== EPACTS Installation Details  ==
+
+If you want to use EPACTS in an Ubuntu platform, following the step below 
+
+* Download EPACTS source distribution at http://www.sph.umich.edu/csg/kang/epacts/download/EPACTS-3.0.0.tar.gz (99MB) 
+* Uncompress EPACTS package, and install the package using the following set of commands
+
+  tar xzvf EPACTS-$(VERSION).tar.gz
+  cd EPACTS-$(VERSION)
+  ./configure --prefix=/path/to/install 
+  (If you have libraries in non-standard directory, please try
+   ./configure --prefix=/path/to/install LDFLAGS=-L/path/to/library to include the directory containing libR.so)
+  make
+  make install
+
+(Important Note: '''make sure to specify --prefix=/path/to/install''' to avoid installing to the default path /usr/local/, which you may not have the permission. /home/your_userid/epacts might be a good one, if you are not sure where to install)
+  
+* Now ${EPACTS_DIR} represents the '/path/to/install' directory
+
+* Download the reference FASTA files from 1000 Genomes FTP automatically by running the following commands
+
+  ${EPACTS_DIR}/bin/epacts download
+
+ (For advanced users, to save time for downloading the FASTA files (~900MB), you may copy a local copy of GRCh37 FASTA file and the index file to ${EPACTS_DIR}/share/EPACTS/)
+
+*Perform a test run by running the following command
+
+  ${EPACTS_DIR}/bin/test_run_epacts.sh
